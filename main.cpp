@@ -11,6 +11,11 @@ int main()
     {
         cout << "需要玩游戏吗（Y/N）？" << endl;
         cin >> ans;
+        while (ans != 'Y' && ans != 'N')
+        {
+            cout << "输入格式有误，请重新输入\n";
+            cin >> ans;
+        }
         if (ans == 'Y')
         {
             ++chance;
